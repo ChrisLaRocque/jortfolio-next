@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import "../node_modules/bulma/bulma.sass";
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.modal-content {
+  width: calc(100vw - 20vw);
+  @media only screen and (max-width: 768px) {
+    width: calc(100vw - 10vw);
+  }
+}
+
+.navbar {
+  a {
+    color: unset;
+  }
+  .navbar-brand {
+    .navbar-burger {
+      height: 5rem;
+      width: 5rem;
+      span {
+        width: 24px;
+        height: 3px;
+      }
+    }
+  }
+}
+
+section {
+  padding: 15px 30px;
+}
+.icon {
+  color: unset;
+  svg {
+    transform: scale(1.2);
+  }
+}
+.hero {
+  &.is- {
+    &primary {
+      color: #363636 !important;
+    }
+  }
+}
+// Cards
+.card-header {
+  background: black;
+  .card-header-title {
+    color: #fff;
+  }
+  .icon {
+    color: white;
+    margin: 10px 10px 0 0;
+    svg {
+      transform: scale(1.5);
+      transform-origin: top right;
+    }
+  }
+}
+
+// Project page side items
+#nav-side {
+  ol {
+    margin-top: 0;
+  }
+}
+
+// In progress modal
+#in-progress {
+  position: absolute;
+  max-width: 20vw;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  @media only screen and (max-width: 768px) {
+    max-width: 95vw;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    position: sticky;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #page-wrapper {
+    &.columns {
+      margin-right: 0 !important;
+    }
+  }
+  .content {
+    table {
+      thead,
+      tbody {
+        display: block;
+        tr {
+          display: flex;
+          justify-content: space-between;
+          align-items: stretch;
+          td {
+            &:nth-of-type(2) {
+              text-align: right;
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
