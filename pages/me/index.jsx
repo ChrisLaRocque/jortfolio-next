@@ -12,7 +12,7 @@ export default function Me(){
       <div className="content">
         <h1>About me</h1>
         <p>
-          I'm a web developer based near Boston, MA with ~7 years experience
+          I&apos;m a web developer based near Boston, MA with ~7 years experience
           building content oriented, user-first web applications.
         </p>
         <div className="buttons">
