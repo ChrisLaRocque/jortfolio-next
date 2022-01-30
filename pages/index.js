@@ -40,9 +40,9 @@ function IndexPage(props) {
 }
 export async function getStaticProps({ params }) {
   const tech = await (getAllTech()) ?? []
-  const projectPages = await(getAllProjectPages() || [])
-  const projectCards = projectPages.slice(0,3)
-  const techCards = tech.slice(0,6)
+  const projectPages = await(getAllProjectPages() ?? [])
+  const projectCards = projectPages ? projectPages.slice(0,3) : null
+  const techCards = tech ? tech.slice(0,6) : null
   // Pass post data to the page via props
   return { props: { projectCards, techCards } }
 }

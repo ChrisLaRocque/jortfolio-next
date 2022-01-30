@@ -30,7 +30,7 @@ const {contentfulTech, allContentfulChrisProjectPage} = props
             {experience && (
             <div className="content">
               <h2>{ `My experience with ${name}` }</h2>
-              <div dangerouslySetInnerHTML={{ __html: experience.childMarkdownRemark.html }} />
+              <div dangerouslySetInnerHTML={{ __html: experience }} />
             </div>
             )}
           </div>
