@@ -12,7 +12,6 @@ function Project(props) {
   const {
     title, description, body, site, techCollection, githubLink, relatedProjectsCollection, inProgress,
   } = contentfulChrisProjectPage;
-  console.log('related', techCollection)
   const relatedProjects = relatedProjectsCollection.items
   const tech = techCollection.items
   return (
