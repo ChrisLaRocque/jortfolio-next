@@ -82,6 +82,13 @@ section {
     position: sticky;
   }
 }
+#page-wrapper {
+  .tech-icon-wrapper {
+    &:hover {
+      cursor: pointer
+      }
+  }
+}
 @media only screen and (max-width: 768px) {
   #page-wrapper {
     &.columns {

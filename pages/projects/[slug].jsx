@@ -1,5 +1,5 @@
 import React from 'react';
-import  Link from 'next/link';
+import Link from 'next/link';
 import Layout from '../../components/Layout';
 import Icon from '../../components/Icon';
 // import Warning from '../../components/Warning';
@@ -41,12 +41,14 @@ function Project(props) {
               <small style={{ display: 'block' }}>Tech used</small>
               <div className="columns is-multiline is-mobile mt-2">
                 {tech.map((techItem) => (
-                    <div key={techItem.slug} className="column is-one-fifth">
+                  <div key={techItem.slug} className="column is-one-fifth tech-icon-wrapper">
                   <Link
                     href={`/tech/${techItem.slug}`}
                     passHref
                   >
+                    <span>
                     <Icon name={techItem.name} />
+                    </span>
                   </Link>
                   </div>
                 ))}
