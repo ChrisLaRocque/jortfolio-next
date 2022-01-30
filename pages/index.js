@@ -15,8 +15,8 @@ function IndexPage(props) {
   return (
     <Layout seoInfo={{ title: 'Chris LaRocque | Web Developer', description: 'Chris LaRocque is a web developer from Boston, MA. He specializes in tactical agile development aimed at delivering user-centric software at scale and at speed.' }}>
       <Hero
-        headline="Hey I'm Chris, I do web stuff."
-        subHeadline="I'm a full-stack web developer/engineer building responsive, user-first websites. Check out the things I've built or the tech I've used to build them below."
+        headline="Hey I&apos;m Chris, I do web stuff."
+        subHeadline="I&apos;m a full-stack web developer/engineer building responsive, user-first websites. Check out the things I&apos;ve built or the tech I&apos;ve used to build them below."
       />
       <Cards
         headline="Projects"
@@ -28,12 +28,12 @@ function IndexPage(props) {
       />
       <Cards
         headline="Tech"
-        subHeadline="The tech I use and where I've used it"
+        subHeadline="The tech I use and where I&apos;ve used it"
         cards={techCards}
         more={{ to: '/tech', text: 'All tech' }}
         prepend="/tech/"
         icons
-        ctaText="What I've built with"
+        ctaText="What I&apos;ve built with"
       />
     </Layout>
   );

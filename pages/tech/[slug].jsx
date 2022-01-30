@@ -84,7 +84,7 @@ const {contentfulTech, allContentfulChrisProjectPage} = props
         </div>
         <div className="columns">
           <div className="column is-full">
-            <Link href="/tech">
+        <Link href="/tech" passHref>
                 <span>
               <Icon name="Arrow left" />
               {' '}

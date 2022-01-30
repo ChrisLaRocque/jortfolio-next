@@ -117,7 +117,6 @@ export async function getStaticPaths() {
 
 // This also gets called at build time
 export async function getStaticProps({ params }) {
-    console.log('params', params)
   const contentfulChrisProjectPage = await (getProjectPage(params.slug)) ?? []
   const parsedBody = await markdownToHtml(contentfulChrisProjectPage.body || '')
  
