@@ -20,7 +20,7 @@ export default function SEO({
         <meta name="twitter:title" content={parsedTitle}></meta>
         <meta name="twitter:description" content={description || "Chris LaRocque is a web developer from Boston, MA. He specializes in tactical agile development aimed at delivering user-centric software at scale and at speed."}></meta>
     </Head>
-    <Script
+    {/* <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-YH5X1FXFKW"
         strategy="afterInteractive"
       />
@@ -32,7 +32,7 @@ export default function SEO({
 
           gtag('config', 'G-YH5X1FXFKW');
         `}
-      </Script>
+      </Script> */}
       </>
     // <Helmet
     // //   htmlAttributes={{
