@@ -12,6 +12,7 @@ export default function SEO({
         <title>{parsedTitle}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="robots" content="noindex, nofollow"></meta>
         <meta property="og:title" content={parsedTitle}></meta>
         <meta property="og:image" content="https://www.larocque.dev/headshot.jpeg"></meta>
         <meta name="description" content={description || "Chris LaRocque is a web developer from Boston, MA. He specializes in tactical agile development aimed at delivering user-centric software at scale and at speed."}></meta>
@@ -70,5 +71,6 @@ export default function SEO({
     //     },
     //   ].concat(meta)}
     // />
+
   );
 }
